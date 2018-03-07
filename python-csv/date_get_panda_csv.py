@@ -39,7 +39,6 @@ def get_date_time(lista, listb):
 
 # 获取表头
 def get_csv_head(path):
-    # path = 'C:/Users/MC/Desktop/sampleData/2016第2季度/7#高加疏水-5.csv'
 
     with open(path, 'r') as f:
         reader = csv.reader(f)
@@ -68,7 +67,6 @@ def data_assembly(sampling_date, sampling_time, sampling_data, sampling_coding,
 
 
 def opera_csv(path):
-    # path = 'C:/Users/MC/Desktop/sampleData/2016第2季度/7#高加疏水-5.csv'
     head = get_csv_head(path)
     print(len(head))
     index = 0
